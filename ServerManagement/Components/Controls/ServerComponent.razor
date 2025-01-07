@@ -1,0 +1,12 @@
+﻿@* <h3>ServerComponent</h3> *@
+<div data-name="@server.Name" data-status="server is @(server.IsOnline? "online":"offline") " 
+ style="@($"color:{(server.IsOnline ?"green" :"red")}")" >
+    <p>@server.Name is in @server.City that is @(server.IsOnline ? "online" : "offline")</p>
+
+
+    
+</div>
+
+@code {
+    private Server server = new Server { Name = "Server 1", City = "Hyderabad" }; 
+}
