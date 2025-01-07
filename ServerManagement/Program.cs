@@ -23,3 +23,5 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>();
 
 app.Run();
+
+// github dev
